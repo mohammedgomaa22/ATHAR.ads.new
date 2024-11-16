@@ -1,63 +1,63 @@
 /* English */
 @font-face {
   font-family: "englishFont";
-  src: url("./Fonts/english/Montserrat-Black.otf");
+  src: url("./fonts/english/Montserrat-Black.otf");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "englishFont";
-  src: url("./Fonts/english/Montserrat-ExtraBold.otf");
+  src: url("./fonts/english/Montserrat-ExtraBold.otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "englishFont";
-  src: url("./Fonts/english/Montserrat-Bold.otf");
+  src: url("./fonts/english/Montserrat-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "englishFont";
-  src: url("./Fonts/english/Montserrat-SemiBold.otf");
+  src: url("./fonts/english/Montserrat-SemiBold.otf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "englishFont";
-  src: url("./Fonts/english/Montserrat-Medium.otf");
+  src: url("./fonts/english/Montserrat-Medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "englishFont";
-  src: url("./Fonts/english/Montserrat-Regular.otf");
+  src: url("./fonts/english/Montserrat-Regular.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "englishFont";
-  src: url("./Fonts/english/Montserrat-Light.otf");
+  src: url("./fonts/english/Montserrat-Light.otf");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "englishFont";
-  src: url("./Fonts/english/Montserrat-ExtraLight.otf");
+  src: url("./fonts/english/Montserrat-ExtraLight.otf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "englishFont";
-  src: url("./Fonts/english/Montserrat-Thin.otf");
+  src: url("./fonts/english/Montserrat-Thin.otf");
   font-weight: 100;
   font-style: normal;
 }
@@ -65,56 +65,56 @@
 /* Arabic */
 @font-face {
   font-family: "arabicFont";
-  src: url("./Fonts/arabic/black.otf");
+  src: url("./fonts/arabic/black.otf");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "arabicFont";
-  src: url("./Fonts/arabic/bold.otf");
+  src: url("./fonts/arabic/bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "arabicFont";
-  src: url("./Fonts/arabic/semiBold.otf");
+  src: url("./fonts/arabic/semiBold.otf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "arabicFont";
-  src: url("./Fonts/arabic/medium.otf");
+  src: url("./fonts/arabic/medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "arabicFont";
-  src: url("./Fonts/arabic/arabic.otf");
+  src: url("./fonts/arabic/arabic.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "arabicFont";
-  src: url("./Fonts/arabic/light.otf");
+  src: url("./fonts/arabic/light.otf");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "arabicFont";
-  src: url("./Fonts/arabic/extraLight.otf");
+  src: url("./fonts/arabic/extraLight.otf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "arabicFont";
-  src: url("./Fonts/arabic/thin.otf");
+  src: url("./fonts/arabic/thin.otf");
   font-weight: 100;
   font-style: normal;
 }
