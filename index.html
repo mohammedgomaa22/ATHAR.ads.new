@@ -20,6 +20,8 @@
             extend: {
                 colors: {
                     primary: '#003DFF',
+                    secondary: '#000000',
+                    light: '#FFFFFF',
                 }
             }
             }
@@ -38,7 +40,7 @@
 <body>
 
     <!-- Preloader -->
-    <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-black to-gray-800 duration-1000">
+    <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-secondary to-gray-800 duration-1000">
         <div class="loader">
             <div class="loader-square"></div>
             <div class="loader-square"></div>
@@ -54,8 +56,8 @@
     <!--- Video Model --->
     <div class="models hidden h-screen w-full justify-center items-center fixed top-0 left-0 z-[9999] bg-[#00000050]"
         style="backdrop-filter: blur(5px);" id="model">
-        <div class="video h-[450px] p-5 relative flex items-center justify-center bg-gradient-to-l from-black to-primary rounded-xl">
-            <button class="close-video h-[50px] w-[50px] p-[3px] rounded-full text-[18px] absolute bottom-[-55px] right-1/2 translate-x-1/2 text-white cursor-pointer bg-red-500 z-10"
+        <div class="video h-[450px] p-5 relative flex items-center justify-center bg-gradient-to-l from-secondary to-primary rounded-xl">
+            <button class="close-video h-[50px] w-[50px] p-[3px] rounded-full text-[18px] absolute bottom-[-55px] right-1/2 translate-x-1/2 text-light cursor-pointer bg-red-500 z-10"
                 data-close>أغلق</button>
             <video class="max-w-full max-h-full rounded-lg" type="video/mp4" controls data-setVideo></video>
         </div>
@@ -66,11 +68,11 @@
     <main class="overflow-hidden">
 
         <!-- Header -->
-        <header class="md:h-screen pt-10 flex flex-col justify-between items-center bg-black">
+        <header class="md:h-screen pt-10 flex flex-col justify-between items-center bg-secondary">
 
             <!-- ARROW ANIMITION -->
             <span class="absolute top-2 animate-hero-arrow" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500">
-                <i class="fas fa-arrow-down bg-white h-[25px] w-[25px] p-2 rounded-full"></i>
+                <i class="fas fa-arrow-down bg-light h-[25px] w-[25px] p-2 rounded-full"></i>
             </span>
             
 
@@ -118,15 +120,15 @@
                     data-aos-delay="1500"
                     >
                         <h2 class="min-h-10 text-[24px] md:text-[50px] font-bold mb-3 md:mb-8">
-                            <span class="text-white">كتابة وتصوير إعلانات الفيديو</span>
+                            <span class="text-light">كتابة وتصوير إعلانات الفيديو</span>
                         </h2>
-                        <p class="min-h-8 text-base md:text-2xl font-light text-white max-w-lg leading-[50px] md:leading-[40px]">
+                        <p class="min-h-8 text-base md:text-2xl font-light text-light max-w-lg leading-[50px] md:leading-[40px]">
                             أثر أدز متخصصين بصناعة فيديو الأعلانات البيعية
                             <br class="hidden md:block">
                             للمتاجر الألكترونية التي تحقق عائد ومبيعات
                         </p>
                         <div class="mt-8 md:mt-20 mb-5 md:mb-0 flex md:justify-end">
-                            <a href="#portfolio" rel="noopener noreferrer" class="flex items-center justify-center w-fit h-[45px] md:h-[56px] px-6 py-4 rounded-[32px] bg-white text-sm md:text-[24px] font-semibold hover:bg-primary hover:text-white">
+                            <a href="#portfolio" rel="noopener noreferrer" class="flex items-center justify-center w-fit h-[45px] md:h-[56px] px-6 py-4 rounded-[32px] bg-light text-sm md:text-[24px] font-semibold hover:bg-primary hover:text-light">
                                 شاهد أعمالنا
                             </a>
                         </div>
@@ -149,65 +151,35 @@
                 </h2>
 
 
-                <div class="relative">
-                    <!-- Swiper -->
-                    <div class="swiper-container tranding-slider two">
-                        <div class="swiper-wrapper max-h-[260px] md:max-h-[520px]">
-    
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[260px] md:max-h-[520px]">
-                                <div class="slider-video h-full">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR1.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
+                <!-- Swiper -->
+                <div class="swiper-container two">
+                    <div class="swiper-wrapper max-h-[355px] md:max-h-[600px]">
+                
+                        <div class="swiper-slide max-h-[355px] md:max-h-[600px]">
+                            <div class="slider-video max-h-[355px] md:max-h-[600px] relative before:content[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:h-14 before:w-14 before:bg-contain before:bg-center before:rounded-full">
+                                <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-2xl h-full" poster="./assets/images/FR1.png" playsinline data-getVideo>
+                                </video>
                             </div>
-
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[260px] md:max-h-[520px]">
-                                <div class="slider-video h-full">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR2.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
-                            </div>
-
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[260px] md:max-h-[520px]">
-                                <div class="slider-video h-full">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR3.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
-                            </div>
-
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[260px] md:max-h-[520px]">
-                                <div class="slider-video h-full">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR4.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
-                            </div>
-
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[260px] md:max-h-[520px]">
-                                <div class="slider-video h-full">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR5.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
-                            </div>
-
-                        </div>
+                        </div>       
                         
-                    </div>
-                    <div class="tranding-slider-control m-0 w-full hidden md:flex justify-between border-0 gap-20 absolute top-1/2 -translate-y-1/2">
-                        <div class="swiper-btn-prev translate-x-full -mr-3">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                        <div class="swiper-btn-next -translate-x-full -ml-3">
-                            <i class="fas fa-arrow-left"></i>
-                        </div>
+                        <div class="swiper-slide max-h-[355px] md:max-h-[600px]">
+                            <div class="slider-video max-h-[355px] md:max-h-[600px] relative before:content[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:h-14 before:w-14 before:bg-contain before:bg-center before:rounded-full">
+                                <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-2xl h-full" poster="./assets/images/FR2.png" playsinline data-getVideo>
+                                </video>
+                            </div>
+                        </div>  
+
+                        <div class="swiper-slide max-h-[355px] md:max-h-[600px]">
+                            <div class="slider-video max-h-[355px] md:max-h-[600px] relative before:content[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:h-14 before:w-14 before:bg-contain before:bg-center before:rounded-full">
+                                <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-2xl h-full" poster="./assets/images/FR3.png" playsinline data-getVideo>
+                                </video>
+                            </div>
+                        </div>                
+                
                     </div>
                 </div>
 
-                <a href="https://wa.me/+966501447257" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-fit mx-auto h-[45px] md:h-[56px] px-16 py-7 rounded-[32px] bg-primary text-white border-2 text-sm md:text-[24px] font-semibold hover:bg-gray-200 hover:text-gray-600 hover:border-blue-500 duration-500">
+                <a href="https://wa.me/+966501447257" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-fit mx-auto h-[45px] md:h-[56px] px-16 py-7 rounded-[32px] bg-primary text-light border-2 text-sm md:text-[24px] font-semibold hover:bg-gray-200 hover:text-gray-600 hover:border-blue-500 duration-500">
                     احتاج فيديو
                 </a>
 
@@ -225,7 +197,7 @@
                     <label for="name" class="relative block rounded-md border border-[#999999] mb-5">
                         <input type="text" id="name" class="peer h-[50px] px-2 border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0" placeholder="اكتب اسمك" />
                     
-                        <span class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-[20px] text-[#999] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0">
+                        <span class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-light p-0.5 text-[20px] text-[#999] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0">
                             اكتب اسمك
                         </span>
                     </label>
@@ -233,7 +205,7 @@
                     <label for="phone" class="relative block rounded-md border border-[#999999] mb-5">
                         <input type="text" id="phone" class="peer h-[50px] px-2 border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0" placeholder="رقم التواصل" />
                     
-                        <span class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-[20px] text-[#999] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0">
+                        <span class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-light p-0.5 text-[20px] text-[#999] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0">
                             رقم التواصل
                         </span>
                     </label>
@@ -241,13 +213,13 @@
                     <label for="message" class="relative block rounded-md border border-[#999999] mb-5">
                         <textarea name="message" id="message" rows="3" class="peer w-full p-2 border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0" placeholder="اترك رسالتك"></textarea>
                     
-                        <span class="pointer-events-none absolute start-2.5 top-0 -translate-y-[150%] bg-white p-0.5 text-[20px] text-[#999] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:-translate-y-1/2 peer-focus:top-0">
+                        <span class="pointer-events-none absolute start-2.5 top-0 -translate-y-[150%] bg-light p-0.5 text-[20px] text-[#999] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:-translate-y-1/2 peer-focus:top-0">
                             اترك رسالتك
                         </span>
                     </label>
                         
             
-                    <button type="submit" class="flex items-center justify-center w-fit mx-auto h-[45px] md:h-[56px] px-16 py-7 rounded-[32px] bg-primary text-white border-2 text-sm md:text-[24px] font-semibold hover:bg-gray-200 hover:text-gray-600 hover:border-blue-500 duration-500">إرسال</button>
+                    <button type="submit" class="flex items-center justify-center w-fit mx-auto h-[45px] md:h-[56px] px-16 py-7 rounded-[32px] bg-primary text-light border-2 text-sm md:text-[24px] font-semibold hover:bg-gray-200 hover:text-gray-600 hover:border-blue-500 duration-500">إرسال</button>
                 </form>
 
 
@@ -260,18 +232,18 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black">
+    <footer class="bg-secondary">
         <div class="container">
             <div class="logo flex flex-col content-end items-center gap-3 md:items-end justify-end mb-7 md:mb-0">
                 <figure class="w-40 md:w-1/2 mt-10">
                     <img src="./assets/images/Logo-B.png" alt="Logo">
                 </figure>
-                <p class="text-[20px] md:text-[36px] font-semibold text-white">
+                <p class="text-[20px] md:text-[36px] font-semibold text-light">
                     أثر أدز نصنع الأثر
                     <span id="typed_dots"></span>
                 </p>
             </div>
-            <div class="copyright flex flex-col md:flex-row justify-between items-center md:items-end text-white pb-2">
+            <div class="copyright flex flex-col md:flex-row justify-between items-center md:items-end text-light pb-2">
                 <div class="socail flex flex-col-reverse items-center gap-5 md:block">
                     <div class="icons flex gap-3 md:gap-7 items-center">
                         <div class="whatsaap">
