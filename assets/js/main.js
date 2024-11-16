@@ -37,6 +37,10 @@ typedJs();
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
+    simulateTouch: true,
+    touchStartPreventDefault: false,
+    observer: true,
+    observeParents: true,
     autoplay: {
         delay: 3500,
         disableOnInteraction: false,

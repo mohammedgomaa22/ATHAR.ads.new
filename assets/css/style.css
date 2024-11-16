@@ -128,6 +128,11 @@ html {
   scroll-behavior: smooth;
   font-size: 18px;
 }
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
 
 ::-webkit-scrollbar {
   width: 4px;
