@@ -33,27 +33,33 @@ typedJs();
 
 // ***************************************************
 // ********** Swiper VIDEO **********
+
 const swiperJS = () => {
-    const swiper = new Swiper( '.swiper-container.two', {
+    var TrandingSlider = new Swiper('.tranding-slider', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         effect: 'coverflow',
-        loop: true,
+        grabCursor: true,
         centeredSlides: true,
+        loop: true,
         slidesPerView: 'auto',
         shadow: false,
-        simulateTouch: true,
-        touchStartPreventDefault: false,
-        observer: true,
-        observeParents: true,
-        coverflow: {
-            rotate: 0,
-            stretch: 100,
-            depth: 150,
+        coverflowEffect: {
+            rotate: 30,
+            stretch: 30,
+            depth: 200,
             modifier: 1.5,
-            slideShadows : false,
+            slideShadows: false,
         },
-    } );
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-btn-next',
+            prevEl: '.swiper-btn-prev',
+        }
+    });
 };
 swiperJS();
 
