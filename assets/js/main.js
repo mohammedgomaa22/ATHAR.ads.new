@@ -52,6 +52,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // ********** Swiper Images **********
+
 const swiperJS = () => {
     var TrandingSlider = new Swiper('.tranding-slider', {
         effect: 'coverflow',
@@ -59,11 +60,13 @@ const swiperJS = () => {
         centeredSlides: true,
         loop: true,
         slidesPerView: 'auto',
+        shadow: false,
         coverflowEffect: {
             rotate: 0,
             stretch: 74,
             depth: 95,
             modifier: 2,
+            slideShadows: false,
         },
         pagination: {
             el: '.swiper-pagination',
