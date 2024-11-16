@@ -29,6 +29,8 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -61,51 +63,60 @@
 
 
 
-    <main>
+    <main class="overflow-hidden">
 
         <!-- Header -->
-        <header class="h-screen pt-10 flex flex-col justify-between items-center bg-black">
-            <figure class="block w-56 md:w-72 mt-10 md:mt-0">
+        <header class="md:h-screen pt-10 flex flex-col justify-between items-center bg-black">
+
+            <!-- ARROW ANIMITION -->
+            <span class="absolute top-2 animate-hero-arrow" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500">
+                <i class="fas fa-arrow-down bg-white h-[25px] w-[25px] p-2 rounded-full"></i>
+            </span>
+            
+
+            <!-- LOGO -->
+            <figure class="block w-48 md:w-72 mb-8 md:mb-0 mt-3 md:mt-0">
                 <img src="./assets/images/Logo-B.png" alt="Logo">
             </figure>
+
             <div class="container relative py-0">
                 <div class="flex flex-row-reverse gap-5 justify-between items-end relative">
 
-                    <!-- Swiper -->
-                    <div class="swiper flex flex-wrap content-end justify-end w-[74%] md:flex-1 absolute md:relative">
-                        <div class="mySwiper w-full h-full">
-                            <div class="swiper-wrapper">
-                            
-                                <div class="swiper-slide slide-1 min-h-[250px] md:max-h-[500px] flex">
-                                    <figure class="img w-full mr-auto">
-                                        <img src="./assets/images/front-view-hand-holding-camera 2.png" alt="pro" width="640" height="360" class="w-full h-full">
-                                    </figure>
-                                </div>
-                            
-                                <div class="swiper-slide slide-1 min-h-[250px] md:max-h-[500px] flex">
-                                    <figure class="img w-full mr-auto">
-                                        <img src="./assets/images/camera-2251051_1920-removebg-preview.png" alt="pro" width="640" height="360" class="w-full h-full">
-                                    </figure>
-                                </div>
-                            
-                                <div class="swiper-slide slide-1 min-h-[250px] md:max-h-[500px] flex">
-                                    <figure class="img w-full mr-auto">
-                                        <img src="./assets/images/film-147137_1920.png" alt="pro" width="640" height="360" class="w-full h-full">
-                                    </figure>
-                                </div>
-                            
-                                <div class="swiper-slide slide-1 min-h-[250px] md:max-h-[500px] flex">
-                                    <figure class="img w-full mr-auto">
-                                        <img src="./assets/images/digital-camera-33879_1920-removebg-preview.png" alt="pro" width="640" height="360" class="w-full h-full">
-                                    </figure>
-                                </div>
-                            
-                            </div>
-                        </div>
+                    <!-- HERO IMAGE IN MOBILE  -->
+                    <figure 
+                    class="img md:hidden absolute h-48"
+                    data-aos="fade-right" 
+                    data-aos-offset="300" 
+                    data-aos-easing=""
+                    data-aos-duration="1500"
+                    data-aos-delay="1500"
+                    >
+                        <img src="./assets/images/front-view-hand-holding-camera 2.png" alt="pro" class="w-full h-full duration-500 animate-hero-mobile">
+                    </figure>
+                    
+                    <!-- HERO IMAGE IN WEB -->
+                    <div 
+                    class="min-h-[250px] md:h-[500px] hidden md:flex w-[74%] md:flex-1 absolute md:relative"
+                    data-aos="fade-right" 
+                    data-aos-offset="300" 
+                    data-aos-easing=""
+                    data-aos-duration="1500"
+                    data-aos-delay="1500"
+                    >
+                        <figure class="img w-full mr-auto">
+                            <img src="./assets/images/front-view-hand-holding-camera 2.png" alt="pro" width="640" height="360" class="w-full h-full duration-500 animate-hero">
+                        </figure>
                     </div>
 
                     <!-- Info -->
-                    <div class="info w-[70%] ml-auto md:ml-0 md:flex-1 text-right pb-5 z-10">
+                    <div 
+                    class="info w-[70%] ml-auto md:ml-0 md:flex-1 text-right pb-5 z-10" 
+                    data-aos="fade-left" 
+                    data-aos-offset="300" 
+                    data-aos-easing=""
+                    data-aos-duration="1500"
+                    data-aos-delay="1500"
+                    >
                         <h2 class="min-h-10 text-[24px] md:text-[50px] font-bold mb-3 md:mb-8">
                             <span class="text-white">كتابة وتصوير إعلانات الفيديو</span>
                         </h2>
@@ -306,6 +317,11 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS ANIMATION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Start JS Files -->
     <script src="./assets/js/all.min.js"></script>
     <script src="./assets/js/main.js"></script>

@@ -163,32 +163,58 @@ html {
   font-family: "englishFont";
 }
 
-/* ----------------- */
+/* ********** PUBLIC ********** */
 
-/* Shape in hero section */
-.custom-shape-divider-bottom-1728248260 {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+.animate-hero {
+  animation: hero-animation 2s ease-in-out 4s both;
+}
+.animate-hero-mobile {
+  animation: hero-animation-mobile 2s ease-in-out 4s both;
 }
 
-.custom-shape-divider-bottom-1728248260 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 129px;
+.animate-hero-arrow {
+  animation: hero-animation-arrow 3s ease-in-out 4s both;
 }
 
-.custom-shape-divider-bottom-1728248260 .shape-fill {
-  fill: #ffffff;
+@keyframes hero-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-35%);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 100deg) translate(280px, 90px) scale(1.5);
+  }
 }
 
-/* ============================ */
-.slider-video::before {
-  background-image: url(./../images/play.png);
+@keyframes hero-animation-mobile {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 90deg) translate(170px, 70px) scale(1.3);
+  }
+}
+
+@keyframes hero-animation-arrow {
+  0% {
+    top: 8px;
+  }
+  50% {
+    top: 95%;
+  }
+  75% {
+    opacity: 0;
+    top: 95%;
+  }
+  100% {
+    display: none;
+    top: 95%;
+  }
 }
 
 /* ********** Preloader ********** */

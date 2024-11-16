@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 loader.classList.add("hidden");
             } , 200);
             
-        }, 1500);
+        }, 1000);
     });
 });
 
