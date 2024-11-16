@@ -32,26 +32,7 @@ function typedJs(dots = "...") {
 typedJs();
 
 // ***************************************************
-// <!-- Initialize Swiper -->
-
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    simulateTouch: true,
-    touchStartPreventDefault: false,
-    observer: true,
-    observeParents: true,
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
-// ********** Swiper Images **********
+// ********** Swiper VIDEO **********
 
 const swiperJS = () => {
     var TrandingSlider = new Swiper('.tranding-slider', {
