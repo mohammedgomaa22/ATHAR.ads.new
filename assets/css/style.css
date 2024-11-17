@@ -186,6 +186,7 @@ body {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   opacity: 0.5;
+  z-index: 0;
 }
 
 /* ********** PUBLIC ********** */
