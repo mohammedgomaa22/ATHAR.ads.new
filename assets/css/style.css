@@ -170,7 +170,8 @@ body {
 }
 
 .slider-video::before {
-  background-image: url(./../images/play.png);
+  background-image: url(./../images/play-button.png);
+  opacity: 0.5;
 }
 
 /* ********** PUBLIC ********** */
@@ -1054,7 +1055,7 @@ button.swiper-pagination-bullet {
 }
 
 .two .swiper-slide {
-  width: 200px;
+  width: 230px;
 }
 @media (min-width: 768px) {
   .two .swiper-slide {
