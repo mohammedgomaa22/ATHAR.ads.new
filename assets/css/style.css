@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* English */
 @font-face {
   font-family: "englishFont";
@@ -170,7 +177,14 @@ body {
 }
 
 .slider-video::before {
+  height: 50px;
+  width: 50px;
   background-image: url(./../images/play-button.png);
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   opacity: 0.5;
 }
 
@@ -1095,6 +1109,11 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-bullet-active {
+  background: rgba(0, 0, 0, 0) -o-linear-gradient(
+      left,
+      #ee0f6f 0%,
+      #f89482 100%
+    ) repeat scroll 0 0;
   background: rgba(0, 0, 0, 0) -webkit-gradient(
       linear,
       left top,
@@ -1222,6 +1241,33 @@ button.swiper-pagination-bullet {
 .swiper-btn-next:hover,
 .swiper-btn-prev:hover {
   background-color: #003dff;
+}
+
+.swiper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-wrapper {
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.swiper-container {
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 /* ********** End Swiper ********** */
