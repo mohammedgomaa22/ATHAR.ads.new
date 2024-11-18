@@ -180,6 +180,9 @@ body {
 }
 
 /* ******************** */
+.video__poster {
+  z-index: -1;
+}
 .video__poster::before {
   height: 50px;
   width: 50px;
