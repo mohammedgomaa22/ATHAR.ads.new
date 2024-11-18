@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>
         ATHAR.ads
     </title>
@@ -28,8 +28,6 @@
         }
     </script>
     <!-- Link Swiper's CSS -->
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- AOS ANIMATION -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -141,7 +139,7 @@
 
                 
         <!-- Portfolio -->
-        <section id="portfolio" class="py-16 md:px-[145px]">
+        <section id="portfolio" class="py-16 md:px-[45px]">
             <div class="container">
 
                 <!-- Main title -->
@@ -150,69 +148,70 @@
                     <img src="./assets/images/1.png" alt="" class="h-[60px] w-[60px] md:h-[120px] md:w-[120px] absolute right-8 md:right-10 top-1/2 -translate-y-1/2 z-[-1]">
                 </h2>
 
+                <div class="swiper mySwiper w-full py-14">
+                    <div class="swiper-wrapper">
 
-                <div class="relative">
-                    <!-- Swiper -->
-                    <div class="swiper-container tranding-slider two w-full">
-                        <div class="swiper-wrapper max-h-[300px] md:max-h-[520px]">
-    
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[300px] md:max-h-[520px] relative">
-                                <div class="slider-video h-full relative before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR1.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
+                        <!-- --- Duplicate This swiper --- -->
+                        <div class="swiper-slide relative overflow-hidden h-[450px] w-[250px] md:w-[370px] rounded-[40px]">
+                            <div class="portfolio__video w-full h-full">
+                                <span class="video__poster absolute h-full w-full left-0 top-0 bg-cover bg-no-repeat bg-center before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center" style="background-image: url(./assets/images/FR1.png);"></span>
+                                <video src="./assets/videos/test.mp4" poster="" type="video/mp4" playsinline data-getVideo width="500" height="500" class="">
+                                    <source src="./assets/videos/test.mp4" type="video/mp4" class="object-contain">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
-                            <!-- --- Duplicate This swiper --- -->
-
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[300px] md:max-h-[520px] relative">
-                                <div class="slider-video h-full relative before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR2.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
-                            </div>
-                            <!-- --- Duplicate This swiper --- -->
-
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[300px] md:max-h-[520px] relative">
-                                <div class="slider-video h-full relative before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR3.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
-                            </div>
-                            <!-- --- Duplicate This swiper --- -->
-
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[300px] md:max-h-[520px] relative">
-                                <div class="slider-video h-full relative before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR4.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
-                            </div>
-                            <!-- --- Duplicate This swiper --- -->
-
-                            <!-- --- Duplicate This swiper --- -->
-                            <div class="swiper-slide max-h-[300px] md:max-h-[520px] relative">
-                                <div class="slider-video h-full relative before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center">
-                                    <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-[40px] h-full" poster="./assets/images/FR5.png" playsinline data-getVideo>
-                                    </video>
-                                </div>
-                            </div>
-                            <!-- --- Duplicate This swiper --- -->
-
-
                         </div>
-                    </div>
-                    <div class="tranding-slider-control m-0 w-full hidden md:flex justify-between border-0 gap-20 absolute top-1/2 -translate-y-1/2">
-                        <div class="swiper-btn-prev translate-x-full -mr-3">
-                            <i class="fas fa-arrow-right"></i>
+                        <!-- --- Duplicate This swiper --- -->
+                        <!-- --- Duplicate This swiper --- -->
+                        <div class="swiper-slide relative overflow-hidden h-[450px] w-[250px] md:w-[370px] rounded-[40px]">
+                            <div class="portfolio__video w-full h-full">
+                                <span class="video__poster absolute h-full w-full left-0 top-0 bg-cover bg-no-repeat bg-center before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center" style="background-image: url(./assets/images/FR2.png);"></span>
+                                <video src="./assets/videos/test.mp4" poster="" type="video/mp4" playsinline data-getVideo width="500" height="500" class="">
+                                    <source src="./assets/videos/test.mp4" type="video/mp4" class="object-contain">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
-                        <div class="swiper-btn-next -translate-x-full -ml-3">
-                            <i class="fas fa-arrow-left"></i>
+                        <!-- --- Duplicate This swiper --- -->
+                        <!-- --- Duplicate This swiper --- -->
+                        <div class="swiper-slide relative overflow-hidden h-[450px] w-[250px] md:w-[370px] rounded-[40px]">
+                            <div class="portfolio__video w-full h-full">
+                                <span class="video__poster absolute h-full w-full left-0 top-0 bg-cover bg-no-repeat bg-center before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center" style="background-image: url(./assets/images/FR3.png);"></span>
+                                <video src="./assets/videos/test.mp4" poster="" type="video/mp4" playsinline data-getVideo width="500" height="500" class="">
+                                    <source src="./assets/videos/test.mp4" type="video/mp4" class="object-contain">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
+                        <!-- --- Duplicate This swiper --- -->
+                        <!-- --- Duplicate This swiper --- -->
+                        <div class="swiper-slide relative overflow-hidden h-[450px] w-[250px] md:w-[370px] rounded-[40px]">
+                            <div class="portfolio__video w-full h-full">
+                                <span class="video__poster absolute h-full w-full left-0 top-0 bg-cover bg-no-repeat bg-center before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center" style="background-image: url(./assets/images/FR4.png);"></span>
+                                <video src="./assets/videos/test.mp4" poster="" type="video/mp4" playsinline data-getVideo width="500" height="500" class="">
+                                    <source src="./assets/videos/test.mp4" type="video/mp4" class="object-contain">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- --- Duplicate This swiper --- -->
+                        <!-- --- Duplicate This swiper --- -->
+                        <div class="swiper-slide relative overflow-hidden h-[450px] w-[250px] md:w-[370px] rounded-[40px]">
+                            <div class="portfolio__video w-full h-full">
+                                <span class="video__poster absolute h-full w-full left-0 top-0 bg-cover bg-no-repeat bg-center before:content[''] before:absolute before:bg-contain before:bg-center before:rounded-full before:flex before:items-center before:justify-center" style="background-image: url(./assets/images/FR5.png);"></span>
+                                <video src="./assets/videos/test.mp4" poster="" type="video/mp4" playsinline data-getVideo width="500" height="500" class="">
+                                    <source src="./assets/videos/test.mp4" type="video/mp4" class="object-contain">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- --- Duplicate This swiper --- -->
+
                     </div>
                 </div>
+
+
+
 
                 <a href="https://wa.me/+966501447257" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-fit mx-auto h-[45px] md:h-[56px] px-16 py-7 rounded-[32px] bg-primary text-light border-2 text-sm md:text-[24px] font-semibold hover:bg-gray-200 hover:text-gray-600 hover:border-blue-500 duration-500">
                     احتاج فيديو
@@ -310,10 +309,7 @@
     
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- AOS ANIMATION -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
